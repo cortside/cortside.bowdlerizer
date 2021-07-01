@@ -5,12 +5,12 @@ VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cortside.Bowdlerizer", "Cortside.Bowdlerizer\Cortside.Bowdlerizer.csproj", "{D4C6316D-530A-449A-8387-3871BF62EAF1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cortside.Bowdlerizer.Test", "Cortside.Bowdlerizer.Test\Cortside.Bowdlerizer.Test.csproj", "{7F9CE4B5-A0A9-441F-B662-09FE8E6FEF6D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9C58FF8E-292B-4CB3-BA3C-F87BF276F4D3}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cortside.Bowdlerizer.Tests", "Cortside.Bowdlerizer.Tests\Cortside.Bowdlerizer.Tests.csproj", "{01D3F3D5-D9EA-4E36-9BBD-2DC212AB0041}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +22,10 @@ Global
 		{D4C6316D-530A-449A-8387-3871BF62EAF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4C6316D-530A-449A-8387-3871BF62EAF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4C6316D-530A-449A-8387-3871BF62EAF1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F9CE4B5-A0A9-441F-B662-09FE8E6FEF6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F9CE4B5-A0A9-441F-B662-09FE8E6FEF6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F9CE4B5-A0A9-441F-B662-09FE8E6FEF6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F9CE4B5-A0A9-441F-B662-09FE8E6FEF6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01D3F3D5-D9EA-4E36-9BBD-2DC212AB0041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01D3F3D5-D9EA-4E36-9BBD-2DC212AB0041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01D3F3D5-D9EA-4E36-9BBD-2DC212AB0041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01D3F3D5-D9EA-4E36-9BBD-2DC212AB0041}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

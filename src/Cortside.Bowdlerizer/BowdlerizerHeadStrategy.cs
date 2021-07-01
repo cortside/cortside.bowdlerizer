@@ -18,5 +18,5 @@ namespace Cortside.Bowdlerizer {
 
             return s.Substring(0, chars) + "***";
         }
-    };
+    }
 }
