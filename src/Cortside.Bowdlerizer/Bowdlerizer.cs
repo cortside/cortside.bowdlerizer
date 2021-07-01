@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml;
@@ -7,7 +6,6 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace Cortside.Bowdlerizer {
-
     public class Bowdlerizer {
         private readonly List<BowdlerizerRule> rules = new List<BowdlerizerRule>();
 
@@ -21,10 +19,10 @@ namespace Cortside.Bowdlerizer {
         }
 
         public Bowdlerizer(List<BowdlerizerRule> paths) {
-            this.rules.AddRange(paths);
+            rules.AddRange(paths);
         }
 
-        public string BowdlerizeObject(Object o) {
+        public string BowdlerizeObject(object o) {
             var token = JToken.FromObject(o);
             ObscureMatchingValues(token);
 
