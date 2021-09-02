@@ -12,6 +12,22 @@ namespace Cortside.Bowdlerizer {
         public Bowdlerizer() {
         }
 
+        public Bowdlerizer(List<BowdlerizerRuleConfiguration> config) {
+            foreach (var c in config) {
+                switch (c.Strategy) {
+                    case Strategy.Default:
+                        rules.Add(new BowdlerizerRule() { Strategy = new BowdlerizerDefaultStrategy(), Path = c.Path });
+                        break;
+                    case Strategy.Head:
+                        rules.Add(new BowdlerizerRule() { Strategy = new BowdlerizerHeadStrategy(c.Length), Path = c.Path });
+                        break;
+                    case Strategy.Tail:
+                        rules.Add(new BowdlerizerRule() { Strategy = new BowdlerizerTailStrategy(c.Length), Path = c.Path });
+                        break;
+                }
+            }
+        }
+
         public Bowdlerizer(string[] v) {
             foreach (var s in v) {
                 rules.Add(new BowdlerizerRule() { Path = s });
