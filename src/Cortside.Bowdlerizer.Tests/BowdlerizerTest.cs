@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Xml;
 using System.Xml.Linq;
 using Cortside.Bowdlerizer.Test.Models;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Xunit;
@@ -11,16 +12,12 @@ namespace Cortside.Bowdlerizer.Test {
         private readonly Bowdlerizer bowdlerizer;
 
         public BowdlerizerTest() {
-            this.bowdlerizer = new Bowdlerizer(new List<BowdlerizerRule> {
-                new BowdlerizerRule() { Path = "$..SocialSecurityNum", Strategy=new BowdlerizerTailStrategy(0) },
-                new BowdlerizerRule() { Path = "$..SSN", Strategy=new BowdlerizerTailStrategy(4) },
-                new BowdlerizerRule() { Path = "$..['SearchBy.SSN']", Strategy=new BowdlerizerTailStrategy(4) },
-                new BowdlerizerRule() { Path = "$..PhoneNumber"},
-                new BowdlerizerRule() { Path = "$..Phone"},
-                new BowdlerizerRule() { Path = "$..MailingAddress.Address1", Strategy=new BowdlerizerHeadStrategy(4) },
-                new BowdlerizerRule() { Path = "$..MailingAddress.Address2", Strategy=new BowdlerizerHeadStrategy(4) },
-                new BowdlerizerRule() { Path = "$..BorrowerFName", Strategy=new BowdlerizerHeadStrategy(0) }
-            });
+            var configuration = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json")
+                .Build();
+
+            var rules = configuration.GetSection("Bowdlerizer").Get<List<BowdlerizerRuleConfiguration>>();
+            bowdlerizer = new Bowdlerizer(rules);
         }
 
         [Fact]
@@ -113,6 +110,5 @@ namespace Cortside.Bowdlerizer.Test {
             var s = new BowdlerizerTailStrategy(4);
             Assert.Equal("***c", s.Bowdlerize("abc"));
         }
-
     }
 }
