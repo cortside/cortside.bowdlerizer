@@ -1,5 +1,3 @@
-using System;
-
 namespace Cortside.Bowdlerizer {
     public class BowdlerizerMaskStrategy : BowdlerizerStrategy {
         private readonly int length;
