@@ -22,6 +22,6 @@ $commits | Out-File CHANGELOG.md -Encoding utf8 -Append
 $releaselog = ((Get-Content CHANGELOG.md -Raw) -replace "(?m)^\s*`r`n",'').trim()
 $contents | Out-File CHANGELOG.md -Encoding utf8 -Append
 
-if ($WithReturn.IsPresent)
+if ($WithReturn.IsPresent) {
 	return $releaselog
 }
