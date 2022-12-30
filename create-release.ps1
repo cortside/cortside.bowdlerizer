@@ -102,7 +102,7 @@ echo $branch
 $exists = (git ls-remote origin $branch)
 if ($exists.Length -eq 0) {
 	git checkout -b $branch
-	$releaseNotes = ./generate-changelog.ps1
+	$releaseNotes = ./generate-changelog.ps1 -version $version -WithReturn
 	git add CHANGELOG.md
 	git commit -m "generate changelog"
 	#git push

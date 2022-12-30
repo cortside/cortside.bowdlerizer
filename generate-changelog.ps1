@@ -1,7 +1,7 @@
 Param
 (
 	[Parameter(Mandatory = $true)][string]$version,
-	
+	[Parameter(Mandatory = $false)][switch]$WithReturn
 )
 
 # TODO: find current version in file if it exists and truncate to the end
