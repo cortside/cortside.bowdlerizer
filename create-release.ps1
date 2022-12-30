@@ -110,6 +110,7 @@ if ($exists.Length -eq 0) {
 	
 	$remote = (git remote -v)
 	if ($remote -contains "github.com") {
+		gh repo set-default
 		gh pr create --title "Release $version" --body "$releaseNotes" --base master
 	} else {
 		echo "should create the pr here -- everything passed - $branch"	
