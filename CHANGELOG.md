@@ -1,5 +1,27 @@
-# Release 1.0
+# Release 1.1
 
+|Commit|Date|Author|Message|
+|---|---|---|---|
+| 1f231b6 | <span style="white-space:nowrap;">2022-07-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  [feature/BOT-20220713] updated nuget packages
+| c191370 | <span style="white-space:nowrap;">2022-07-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  handle git flow named branches
+| f8a94d9 | <span style="white-space:nowrap;">2022-07-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  Merge pull request #3 from cortside/feature/BOT-20220713
+| 75ca28f | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  [feature/BOT-20221229] updated nuget packages
+| cea24f5 | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  update nuget api key
+| 982f09b | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  update appveyor build
+| 5b8b348 | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  Delete .dtbcache
+| c58db1c | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  Delete .dtbcache.v2
+| 8ca8915 | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  update appveyor build
+| 60a8857 | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  (origin/feature/BOT-20221229, feature/BOT-20221229) update appveyor build
+| c6cf4fc | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  Merge pull request #4 from cortside/feature/BOT-20221229
+| c8ab00f | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  update version in prep for next release
+| 947431e | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  add changelog for commits in master
+| 7b6a329 | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  release helper script
+| eb28197 | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  release helper script
+| ddb79ed | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  release helper script
+| 8df8410 | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  (HEAD -> release/1.1, origin/develop, develop) release helper script
+****
+
+# Release 1.0
 |Commit|Date|Author|Message|
 |---|---|---|---|
 | e75e3a4 | <span style="white-space:nowrap;">2021-06-30</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  initial commit
