@@ -4,9 +4,7 @@
         public BowdlerizerStrategy Strategy { get; set; }
 
         public string Bowdlerize(string s) {
-            if (Strategy == null) {
-                Strategy = new BowdlerizerDefaultStrategy();
-            }
+            Strategy ??= new BowdlerizerDefaultStrategy();
             return Strategy.Bowdlerize(s);
         }
     }

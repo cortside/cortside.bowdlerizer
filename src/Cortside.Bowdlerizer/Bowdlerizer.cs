@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml;
@@ -24,6 +25,8 @@ namespace Cortside.Bowdlerizer {
                     case Strategy.Tail:
                         rules.Add(new BowdlerizerRule() { Strategy = new BowdlerizerTailStrategy(c.Length), Path = c.Path });
                         break;
+                    default:
+                        throw new ArgumentOutOfRangeException(nameof(config), c.Strategy.ToString());
                 }
             }
         }
