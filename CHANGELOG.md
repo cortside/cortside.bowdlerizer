@@ -1,5 +1,21 @@
-# Release 1.1
+# Release 6.0
 
+|Commit|Date|Author|Message|
+|---|---|---|---|
+| 47fdc93 | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  update version
+| 6c4d26b | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  Merge branch 'release/1.1' into develop
+| 16335e3 | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  Merge branch 'release/1.1' into develop
+| 7169f47 | <span style="white-space:nowrap;">2023-01-02</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  Merge branch 'master' into develop
+| dd03bd2 | <span style="white-space:nowrap;">2023-01-02</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  Merge branch 'master' into develop
+| d52b220 | <span style="white-space:nowrap;">2023-04-17</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  Merge branch 'master' into develop
+| a438609 | <span style="white-space:nowrap;">2023-06-26</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  [net6] update to net6
+| e43aa23 | <span style="white-space:nowrap;">2023-06-26</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  (origin/net6, net6) [net6] remove unused references
+| 2e9315f | <span style="white-space:nowrap;">2023-06-26</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  Merge pull request #8 from cortside/net6
+| 27ce900 | <span style="white-space:nowrap;">2023-07-17</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  update version to 6.x to be in line with dotnet and net6 version numbers
+| 815180b | <span style="white-space:nowrap;">2023-07-17</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  (HEAD -> release/6.0, origin/develop, develop) update version to 6.x to be in line with dotnet and net6 version numbers
+****
+
+# Release 1.1
 |Commit|Date|Author|Message|
 |---|---|---|---|
 | 1f231b6 | <span style="white-space:nowrap;">2022-07-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  [feature/BOT-20220713] updated nuget packages
@@ -20,7 +36,6 @@
 | ddb79ed | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  release helper script
 | 8df8410 | <span style="white-space:nowrap;">2022-12-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  (HEAD -> release/1.1, origin/develop, develop) release helper script
 ****
-
 # Release 1.0
 |Commit|Date|Author|Message|
 |---|---|---|---|
