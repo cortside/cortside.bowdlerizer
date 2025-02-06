@@ -3,10 +3,10 @@ using System;
 namespace Cortside.Bowdlerizer.Test.Models {
     public class Person {
         public Person() {
-            BirthDate = new DateTime();
+            BirthDate = DateTime.Today;
         }
 
-        public int BorrowerID { get; set; }
+        public int BorrowerId { get; set; }
         public Address MailingAddress { get; set; }
         public string BorrowerFName { get; set; }
         public string EmailAddress { get; set; }

@@ -8,3 +8,7 @@ cp ..\coeus\shoppingcart-api\update-nugetpackages.ps1
 cp ..\coeus\shoppingcart-api\update-targetframework.ps1
 cp ..\coeus\shoppingcart-api\src\.editorconfig .\src\.editorconfig
 cp ..\coeus\shoppingcart-api\Repository.psm1
+cp ..\coeus\shoppingcart-api\coverage.ps1
+
+cp ..\coeus\shoppingcart-api\src\.editorconfig .\src\.editorconfig
+cp ..\coeus\shoppingcart-api\src\coverlet.runsettings.xml .\src\coverlet.runsettings.xml
