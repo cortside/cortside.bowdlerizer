@@ -1,7 +1,6 @@
-#$env:SONAR_TOKEN = "token"
-#$env:SONAR_PROJECT= "cortside_cortside.bowdlerizer"
-#$env:APPVEYOR_BUILD_VERSION = "72"
-#$env:APPVEYOR_REPO_BRANCH = "codecoverage"
+##
+# Build library repo
+##
 
 $branch = $ENV:APPVEYOR_REPO_BRANCH;
 $fileVersion = $env:APPVEYOR_BUILD_VERSION;
@@ -46,6 +45,6 @@ dotnet tool install --global dotnet-sonarscanner
 dotnet sonarscanner begin /k:"$($env:SONAR_PROJECT)" /o:"cortside" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.token="$($env:SONAR_TOKEN)" /v:"$($env:APPVEYOR_BUILD_VERSION)" /d:sonar.cs.opencover.reportsPaths="**/*.opencover.xml" /d:sonar.coverage.exclusions="**/*Test*.cs,**/Migrations/*" /d:sonar.exclusions="**/*Test*.cs,**/Migrations/*,**/*Api.xml" /d:sonar.dotnet.excludeTestProjects=true /d:sonar.scanner.scanAll=false $args
 dotnet build src --no-restore --configuration Debug /property:"Version=$($env:APPVEYOR_BUILD_VERSION)"
 dotnet test src --no-restore --no-build --collect:"XPlat Code Coverage" --settings ./src/coverlet.runsettings.xml
-dotnet sonarscanner end /d:sonar.login="$($env:SONAR_TOKEN)"
+dotnet sonarscanner end /d:sonar.token="$($env:SONAR_TOKEN)"
 
 dotnet pack src --include-symbols -p:SymbolPackageFormat=snupkg --configuration $env:configuration -o ((get-location).Path + '\artifacts') /property:Version=$env:PACKAGE_VERSION
