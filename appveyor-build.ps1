@@ -47,3 +47,5 @@ dotnet sonarscanner begin /k:"$($env:SONAR_PROJECT)" /o:"cortside" /d:sonar.host
 dotnet build src --no-restore --configuration Debug /property:"Version=$($env:APPVEYOR_BUILD_VERSION)"
 dotnet test src --no-restore --no-build --collect:"XPlat Code Coverage" --settings ./src/coverlet.runsettings.xml
 dotnet sonarscanner end /d:sonar.login="$($env:SONAR_TOKEN)"
+
+dotnet pack src --include-symbols -p:SymbolPackageFormat=snupkg --configuration $env:configuration -o ((get-location).Path + '\artifacts') /property:Version=$env:PACKAGE_VERSION

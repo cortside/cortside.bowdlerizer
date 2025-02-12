@@ -42,10 +42,6 @@ build:
 build_script:
 - pwsh: .\appveyor-build.ps1
 
-after_build:
-- ps: >-
-    dotnet pack src --include-symbols -p:SymbolPackageFormat=snupkg --configuration $env:configuration -o ((get-location).Path + '\artifacts') /property:Version=$env:PACKAGE_VERSION
-    
 artifacts:
 - path: artifacts\**\*.*
 
