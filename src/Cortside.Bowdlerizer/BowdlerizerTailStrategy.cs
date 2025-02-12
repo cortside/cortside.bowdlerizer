@@ -1,4 +1,4 @@
-﻿namespace Cortside.Bowdlerizer {
+namespace Cortside.Bowdlerizer {
     public class BowdlerizerTailStrategy : BowdlerizerStrategy {
         private readonly int tailLength;
 

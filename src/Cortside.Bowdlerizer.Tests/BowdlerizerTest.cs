@@ -21,13 +21,22 @@ namespace Cortside.Bowdlerizer.Test {
         }
 
         [Fact]
+        public void ShouldConstruct() {
+            var b = new Bowdlerizer(new string[] { "foo", "bar" });
+            Assert.NotNull(b);
+            Assert.Equal(2, b.Rules.Count);
+            Assert.Equal(2, b.Paths().Length);
+        }
+
+        [Fact]
         public void ShouldBowdlerizePerson() {
-            var person = new Person() { BorrowerFName = "Chester", SocialSecurityNum = "324324324", PhoneNumber = "8015551212", MailingAddress = new Address() { Address1 = "1234 Main Street", Address2 = "Suite 300" } };
+            var person = new Person() { BorrowerFName = "Chester", SocialSecurityNum = "324324324", PhoneNumber = "8015551212", MailingAddress = new Address() { Address1 = "1234 Main Street", Address2 = "Suite 300", City = "Springfield" } };
             var result = JsonConvert.DeserializeObject<Person>(bowdlerizer.BowdlerizeObject(person));
             Assert.Equal("***", result.SocialSecurityNum);
             Assert.Equal("8*******12", result.PhoneNumber);
             Assert.Equal("1234***", result.MailingAddress.Address1);
             Assert.Equal("Suit***", result.MailingAddress.Address2);
+            Assert.Equal("****", result.MailingAddress.City);
             Assert.Equal("***", result.BorrowerFName);
         }
 
