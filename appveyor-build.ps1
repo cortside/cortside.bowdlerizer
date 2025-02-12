@@ -33,7 +33,7 @@ if (Test-Path env:APPVEYOR_PULL_REQUEST_NUMBER) {
 		if ($branch -eq "develop" -or $branch -like "release/*" -or $branch -like "hotfix/*") {
 			$target = "master";
 		}		
-		$args += "/d:sonar.newCode.referenceBranch=$target";
+		#$args += "/d:sonar.newCode.referenceBranch=$target";
 	}
 }
 
