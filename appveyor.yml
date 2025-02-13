@@ -21,8 +21,8 @@ environment:
   RESTRICTED_WORDS:
     secure: y2oCk9wYmgBAzk4m1tsSFUOlcEePEjozzMCfC0p6NQI=
 
-init:
-- ps: ./dotenv.ps1 
+install:
+- ps: ./dotenv.ps1
 - ps: $Env:LABEL = "CI" + $Env:APPVEYOR_BUILD_NUMBER.PadLeft(5, "0")
 - ps: Get-ChildItem "Env:"
 
