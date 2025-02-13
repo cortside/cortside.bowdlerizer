@@ -18,11 +18,28 @@ environment:
   JAVA_HOME: C:\Program Files\Java\jdk19
   SONAR_TOKEN:
     secure: fNmV/P8zSNwd3LWpzw2nnm807oe1Hr0gr11hTItGCXmnVQ0tHN1ESPUjLYjsXmpG
-  SONAR_PROJECT: cortside_cortside.bowdlerizer
   RESTRICTED_WORDS:
     secure: y2oCk9wYmgBAzk4m1tsSFUOlcEePEjozzMCfC0p6NQI=
 
 init:
+- ps: >-
+    # Path to the .env file
+    $envFilePath = ".env"
+
+    # Read each line of the file
+    Get-Content $envFilePath | ForEach-Object {
+      # Split each line into key and value based on the first '=' character
+      $split = $_.Split("=", 2)
+
+      # If the line was split successfully (key and value are present)
+      if ($split.Count -eq 2) {
+        $key = $split[0].Trim()
+        $value = $split[1].Trim()
+
+        # Set the environment variable
+        $Env:$key = $value
+      }
+    }
 - ps: $Env:LABEL = "CI" + $Env:APPVEYOR_BUILD_NUMBER.PadLeft(5, "0")
 - ps: Get-ChildItem "Env:"
 
