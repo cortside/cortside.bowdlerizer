@@ -23,11 +23,8 @@ environment:
 
 init:
 - ps: >-
-    # Path to the .env file
-    $envFilePath = ".env"
-
-    # Read each line of the file
-    Get-Content $envFilePath | ForEach-Object {
+    # Read each line of the .env file
+    Get-Content ".env" | ForEach-Object {
       # Split each line into key and value based on the first '=' character
       $split = $_.Split("=", 2)
 
@@ -39,7 +36,6 @@ init:
         # Set the environment variable
         set-content env:\$key $value
       }
-    }
 - ps: $Env:LABEL = "CI" + $Env:APPVEYOR_BUILD_NUMBER.PadLeft(5, "0")
 - ps: Get-ChildItem "Env:"
 
