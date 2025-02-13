@@ -25,6 +25,11 @@ init:
 - ps: >-
     # Read each line of the .env file
     Get-Content ".env" | ForEach-Object {
+      # Skip empty lines and comments
+      if (-not $line.Trim() -or $line.Trim().StartsWith('#')) {
+          continue
+      }
+    
       # Split each line into key and value based on the first '=' character
       $split = $_.Split("=", 2)
 
