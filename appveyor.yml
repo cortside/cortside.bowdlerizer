@@ -37,7 +37,7 @@ init:
         $value = $split[1].Trim()
 
         # Set the environment variable
-        $Env:$key = $value
+        set-content env:\$key $value
       }
     }
 - ps: $Env:LABEL = "CI" + $Env:APPVEYOR_BUILD_NUMBER.PadLeft(5, "0")
