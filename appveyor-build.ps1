@@ -14,6 +14,7 @@ $fileVersion = $fileVersion.replace("bugfix/", "");
 $env:PACKAGE_VERSION = $fileVersion   
 
 $args = @()
+$args += "/d:sonar.verbose=true"
 if (Test-Path env:APPVEYOR_PULL_REQUEST_NUMBER) {
 	$branch = $Env:APPVEYOR_PULL_REQUEST_HEAD_REPO_BRANCH;
 	$target = $Env:APPVEYOR_REPO_BRANCH;
