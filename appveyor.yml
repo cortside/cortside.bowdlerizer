@@ -26,7 +26,7 @@ init:
     # Read each line of the .env file
     Get-Content ".env" | ForEach-Object {
       # Skip empty lines and comments
-      if (-not $_.Trim() -or $_.Trim().StartsWith('#')) {
+      if (-not "$_".Trim() -or $_.Trim().StartsWith('#')) {
           continue
       }
     
