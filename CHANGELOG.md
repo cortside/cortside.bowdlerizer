@@ -1,3 +1,44 @@
+# Release 8.0
+
+|Commit|Date|Author|Message|
+|---|---|---|---|
+| a6117c5 | <span style="white-space:nowrap;">2023-08-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  update version
+| 3492faa | <span style="white-space:nowrap;">2023-08-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  Merge branch 'master' into develop
+| 56f8eb4 | <span style="white-space:nowrap;">2024-11-04</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  update scripts
+| 4dcacb8 | <span style="white-space:nowrap;">2025-02-06</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  update to net8
+| bef0cbc | <span style="white-space:nowrap;">2025-02-06</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  update to net8
+| e88eed9 | <span style="white-space:nowrap;">2025-02-06</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  update to net8
+| 6700367 | <span style="white-space:nowrap;">2025-02-06</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  update to net8
+| fe0b0bd | <span style="white-space:nowrap;">2025-02-06</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  update to net8
+| b48dcac | <span style="white-space:nowrap;">2025-02-06</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  Merge branch 'master' into develop
+| 97e497e | <span style="white-space:nowrap;">2025-02-07</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  updates to get code coverage working
+| 74ced8e | <span style="white-space:nowrap;">2025-02-07</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  updates to get code coverage working
+| 0c6f256 | <span style="white-space:nowrap;">2025-02-12</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  updates to get code coverage working
+| fb1b9cb | <span style="white-space:nowrap;">2025-02-12</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  updates to get code coverage working
+| 21ce938 | <span style="white-space:nowrap;">2025-02-12</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  updates to get code coverage working
+| 8bddcea | <span style="white-space:nowrap;">2025-02-12</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  (origin/codecoverage, codecoverage) updates to get code coverage working
+| 59b6018 | <span style="white-space:nowrap;">2025-02-12</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  Merge pull request #10 from cortside/codecoverage
+| 4f43de5 | <span style="white-space:nowrap;">2025-02-12</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  updates to get code coverage working
+| 766c15a | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  cleanup sonarqube working directory
+| 6f68300 | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  cleanup sonarqube working directory
+| 820666d | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  Merge branch 'master' into develop
+| 0c85cb2 | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  cleanup sonarqube working directory
+| a85e63a | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  standardization updates
+| 6849ad8 | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  standardization updates
+| b6e3bc4 | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  standardization updates
+| ecece9c | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  standardization updates
+| 45ad66b | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  standardization updates
+| 398beb6 | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  standardization updates
+| 2fc2ec6 | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  standardization updates
+| a9a6e3c | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  standardization updates
+| 36c706e | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  (origin/env, env) standardization updates
+| bf1f402 | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  Merge pull request #11 from cortside/env
+| a64e530 | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  standardization updates
+| 88a54e7 | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  standardization updates
+| c9f0efb | <span style="white-space:nowrap;">2025-02-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  update nuget packages
+| 9783d87 | <span style="white-space:nowrap;">2025-03-13</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  (HEAD -> release/8.0, origin/develop, develop) update packages
+****
+
 # Release 6.0
 
 * Update version number to match framework version (6.x)
