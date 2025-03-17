@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
@@ -24,6 +25,9 @@ namespace Cortside.Bowdlerizer {
                         break;
                     case Strategy.Tail:
                         rules.Add(new BowdlerizerRule() { Strategy = new BowdlerizerTailStrategy(c.Length), Path = c.Path });
+                        break;
+                    case Strategy.Mask:
+                        rules.Add(new BowdlerizerRule() { Strategy = new BowdlerizerMaskStrategy(c.Length, '*'), Path = c.Path });
                         break;
                     default:
                         throw new ArgumentOutOfRangeException(nameof(config), c.Strategy.ToString());
@@ -54,6 +58,7 @@ namespace Cortside.Bowdlerizer {
 
             return BowdlerizeXml(doc);
         }
+
         public string BowdlerizeXml(XmlDocument doc) {
             var json = JsonConvert.SerializeXmlNode(doc);
             JToken token = JToken.Parse(json);
@@ -74,6 +79,7 @@ namespace Cortside.Bowdlerizer {
 
             return token.ToString(Newtonsoft.Json.Formatting.None);
         }
+
         public string BowdlerizeJToken(JToken token) {
             ObscureMatchingValues(token);
 
@@ -91,5 +97,7 @@ namespace Cortside.Bowdlerizer {
         public string[] Paths() {
             return rules.Select(x => x.Path).ToArray();
         }
+
+        public ReadOnlyCollection<BowdlerizerRule> Rules => rules.AsReadOnly();
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Cortside.Bowdlerizer {
+namespace Cortside.Bowdlerizer {
     public class BowdlerizerRule {
         public string Path { get; set; }
         public BowdlerizerStrategy Strategy { get; set; }

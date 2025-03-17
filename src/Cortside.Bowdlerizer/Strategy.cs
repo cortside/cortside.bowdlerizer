@@ -2,6 +2,7 @@ namespace Cortside.Bowdlerizer {
     public enum Strategy {
         Default,
         Head,
-        Tail
+        Tail,
+        Mask
     }
 }

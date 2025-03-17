@@ -33,9 +33,6 @@ if (Test-Path env:APPVEYOR_PULL_REQUEST_NUMBER) {
 			$target = "master";
 		}		
 		$args += "/d:sonar.newCode.referenceBranch=$target";
-	} else {
-		$target = "master";
-		$args += "/d:sonar.newCode.referenceBranch=$target";
 	}
 }
 
