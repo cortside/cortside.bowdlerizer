@@ -1,5 +1,15 @@
 # Release 8.0
 
+* Updated powershell scripts to latest versions from coeus/shoppingcart-api
+* Standardized library build files and resolved code coverage issues
+* Update target framework to net8.0
+* Update all dependency nuget packages
+* Add support for appsettings configured mask strategy ()
+* Add additional tests to raise code coverage
+* Add/Fix build badges
+* Transition to use Shouldly instead of FluentAssertions
+
+
 |Commit|Date|Author|Message|
 |---|---|---|---|
 | a6117c5 | <span style="white-space:nowrap;">2023-08-29</span> | <span style="white-space:nowrap;">Cort Schaefer</span> |  update version
